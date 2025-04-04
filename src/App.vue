@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/require-v-for-key -->
 <script setup>
 import { onMounted, ref } from 'vue'
 import axios from 'axios'
@@ -13,10 +14,6 @@ onMounted(async () => {
     await getDatos()
   }, 3000)
 })
-
-function hacerAlgo() {
-  console.log('se hizo click.')
-}
 
 async function getDatos() {
   try {
